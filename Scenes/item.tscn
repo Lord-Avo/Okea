@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnus7prtbm82n"]
+
+[ext_resource type="Script" path="res://item.gd" id="1_ypuwg"]
+[ext_resource type="Texture2D" uid="uid://cjh6erd8ik3mn" path="res://assets/Reposo.png" id="2_vy03i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n312m"]
+
+[node name="item" type="Node2D"]
+z_index = 60
+script = ExtResource("1_ypuwg")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_n312m")
+
+[node name="image" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.90735e-06, 1.90735e-06)
+texture = ExtResource("2_vy03i")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

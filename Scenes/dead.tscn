@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://clgpkti51ebc2"]
+
+[ext_resource type="Script" path="res://dead.gd" id="1_unhor"]
+[ext_resource type="Texture2D" uid="uid://c1ycr16yhp0fb" path="res://assets/28B2AD1A-720E-40B7-99C9-F7CE073031EE.jpeg" id="2_krfh3"]
+
+[node name="dead" type="Node2D"]
+position = Vector2(51, 577)
+script = ExtResource("1_unhor")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="28b2ad1a-720e-40b7-99c9-f7ce073031ee" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(383, 323)
+scale = Vector2(0.480243, 0.480243)
+texture = ExtResource("2_krfh3")

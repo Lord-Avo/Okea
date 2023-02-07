@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://w12sj6o73aov"]
+
+[ext_resource type="Texture2D" uid="uid://o0qmsj8pirpp" path="res://assets/9aaa073bdcb69a88_800x800ar-3.jpeg" id="1_1xapx"]
+[ext_resource type="Script" path="res://Scenes/lobby_ended.gd" id="1_dwb0f"]
+
+[node name="lobbyEnded" type="Node2D"]
+script = ExtResource("1_dwb0f")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="oldman" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(392, 358)
+scale = Vector2(1.46248, 1.46248)
+texture = ExtResource("1_1xapx")
